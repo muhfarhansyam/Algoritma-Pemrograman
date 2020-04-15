@@ -1,0 +1,6 @@
+Void Pointer :  https://www.geeksforgeeks.org/void-pointer-c-cpp/
+
+Pointer To Pointer:  https://www.tutorialspoint.com/cprogramming/c_pointer_to_pointer.htm
+
+
+Function Pointer :  https://www.learncpp.com/cpp-tutorial/78-function-pointers/
