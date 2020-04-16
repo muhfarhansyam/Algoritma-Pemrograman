@@ -1,0 +1,22 @@
+1.Apa itu union dalam pemrograman c++
+2.Apa itu typedef dalam pemrograman c++
+3.Tulis bentuk umum dari struct to pointer
+4. Buat program sederhana yang menggunakan enum dan bit-field dalam pemrograman c++
+5.Buat Program yang mengandung array dari struct
+6.Apa itu enum dalam pemrograman c++
+7.Buat program sederhana yang menggunakan union dalam pemrograman c++
+8.Buat program sederhana yang mengandung struct to pointer(program upload dalam github)
+9.Buat program sederhana yang menunjukkan passing by reference pada struktur sebagai argumen dari fungsi
+10.Jelaskan dua metode melewati struktur dan fungsi
+11.Buat program sederhana yang menunjukkan passing by value pada struktur sebagai argumen dari fungsi
+12.Buat program sederhana yang menggunakan typedef dalam pemrograman c++
+
+
+
+
+
+
+
+
+
+
