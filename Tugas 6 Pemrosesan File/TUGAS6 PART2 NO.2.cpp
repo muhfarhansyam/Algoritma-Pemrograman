@@ -20,7 +20,7 @@ int main()
        {
               //menulis ke dalam file
               datamhs<<"STAMBUK:13020190005"<<endl;
-			  datamhs<<"Nama Mahasiswa : Muhammad Farhan Syam"<<endl;
+              datamhs<<"Nama Mahasiswa : Muhammad Farhan Syam"<<endl;
               datamhs<<"Kelas: A1"<<endl;
               datamhs<<"IPK: 3.96"<<endl;
               datamhs.close(); //menutup file
