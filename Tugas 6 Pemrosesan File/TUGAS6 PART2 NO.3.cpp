@@ -20,7 +20,7 @@ int main()
        {
               //menulis ke dalam file
               mhsfile<<"STAMBUK:13020190005"<<endl;
-			  mhsfile<<"Nama Mahasiswa : Muhammad Farhan Syam"<<endl;
+	      mhsfile<<"Nama Mahasiswa : Muhammad Farhan Syam"<<endl;
               mhsfile<<"Kelas: A1"<<endl;
               mhsfile.close(); //menutup file
               cout<<"Text telah berhasil ditulis ke dalam File"<<endl;
