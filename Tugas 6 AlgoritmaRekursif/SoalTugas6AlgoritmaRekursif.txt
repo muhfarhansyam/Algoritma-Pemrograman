@@ -1,0 +1,6 @@
+1.Buatlah program c++ untuk menghitung deret s=2+4+6+8+10
+2.Apa yang dimaksud rekursif
+3.jelaskan bentuk dan sifat rekursif
+4.tulis algoritma rekursif pada kasus factorial
+5.buatlah program sederhana dalam bhs c++ penerapan algoritma rekursif pada kasus factorial
+6.Jelaskan penerapan rekursif pada factorial
