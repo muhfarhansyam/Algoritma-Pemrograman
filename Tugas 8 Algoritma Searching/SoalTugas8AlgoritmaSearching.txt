@@ -1,0 +1,11 @@
+Soal Tugas 8
+
+1. Apa yang dimaksud dengan pencarian dalam ilmu komputer
+2. Jelaskan spesifikasi algoritma pencarian berdasarkan keluaran
+3. Sebutkan macam-macam metode pencarian
+4. Apa yang dimaksud dengan metode pencarian beruntun atau sequential
+5. Tulislah algoritma pencarian beruntun
+6. Buatlah program dalam bahasa c++ yang menerapkan metode pencarian beruntun
+7. Apa yang dimaksud dengan metode pencarian bagi dua atau binary search
+8. Tulislah Algoritma pencarian binary seaching
+9. Buatlah program dalam bahasa c++ yang menerapkan metode pencarian bagi dua
