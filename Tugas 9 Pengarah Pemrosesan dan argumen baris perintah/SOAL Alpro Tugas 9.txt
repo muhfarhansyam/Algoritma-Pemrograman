@@ -1,0 +1,178 @@
+Arahan Preprosesor atau Preprocessor Directive adalah intruksi untuk CPU memerintahkan untuk memproses suatu arahan atau informasi sebelum memulai melakukan kompilasi pada program yang telah kita tulis.
+Arahan Preprosesor merupakan sebuah instruksi dan bukan merupakan sebuah pernyataan, Setiap intruksi Arahan Preprosesor dimulai dengan tanda pagar # , dan tidak di akhiri dengan sebuah tanda titik koma ;.
+
+
+#define
+#elif
+#else
+#endif
+#error
+#if
+#ifdef
+#ifndef
+#include
+#inline
+#pragma
+#undef
+
+
+Penyertaan file header 
+#include <header> //cara 1
+#include "file" //cara 2
+
+//Preprocessor Macro
+#include <iostream>
+#include <math.h>
+using namespace std;
+#define PI 3.14 //Deklarasi Makro
+
+int main(){
+	int r,hasil;
+	
+	cout<<"Masukkan Radius : ";
+	cin>>r;
+	
+	hasil = PI * pow(r, 2);
+	printf("Luas Lingkaran = %d",hasil);
+}
+
+
+//Preprocessor Macro Function
+#include <iostream>
+using namespace std;
+
+#define MAX(a,b) ((a)>(b)?(a):(b)) //Deklarasi Makro Function
+
+int main(){
+	int x,y;
+	
+	cout<<"Masukkan 2 Angka Untuk Dibandingkan :\n";
+	cin>>x;
+	cin>>y;
+	
+	printf("Angka Yang Lebih Besar Adalah = %d",MAX(x,y));
+}
+
+
+//Predefined Preprocessor
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "Ini Adalah Baris Ke  " << __LINE__;
+  cout << " Dari File " << __FILE__ << ".\n";
+  cout << "Proses Kompilasi Dimulai Pada " << __DATE__;
+  cout << " Di Waktu " << __TIME__ << ".\n";
+  cout << "Nilai Yang Diberikan Compiler Dari __cplusplus Adalah" << __cplusplus;
+  return 0;
+}
+
+
+//Include (Header)
+void ADD(int a, int b) 
+{ 
+	printf("Hasil Penjumlahan = %d\n", a + b); 
+} 
+
+void MULTIPLY(int a, int b) 
+{ 
+	printf("Hasil Perkalian = %d\n", a * b); 
+} 
+
+
+//Include File (main)
+#include <iostream>
+using namespace std;
+#include "process.h"
+
+int main(){
+	
+	ADD(10, 15);
+	
+	MULTIPLY(10, 15);
+	
+	cout<<"Proses Telah Selesai";
+}
+
+
+//Conditional Compilation
+#include <iostream>
+using namespace std;
+#define ABCD 2
+ 
+int main(){
+ 
+#ifdef ABCD
+	cout << "1: yes\n";
+#else
+    cout << "1: no\n";
+#endif
+ 
+#ifndef ABCD
+    cout << "2: no1\n";
+#elif ABCD == 2
+    cout << "2: yes\n";
+#else
+    cout << "2: no2\n";
+#endif
+ 
+#if !defined(DCBA) && (ABCD < 2*4-3)
+    cout << "3: yes\n";
+#endif
+}
+
+
+//Preprocessor Error
+#include <stdio.h>
+#include <limits.h>
+
+#define MILLISECONDS(age) (age * 365 * 24 * 60 * 60 * 1000)
+
+int main(){
+
+   int age;
+
+   #if INT_MAX < MILLISECONDS(12)
+   #error Integer size tidak bisa menyimpan umur dalam miliseconds
+   #endif
+
+   age = MILLISECONDS(12);
+
+   printf("Umur Anda Dalam Milisecond Adalah %d\n", age);
+
+}
+
+
+//Preprocessor Line
+#include <stdio.h>	/*line 1*/
+/*line 2*/
+int main(){	/*line 3*/
+/*line 4*/
+	printf("Hello world\n");	/*line 5*/
+	//print current line	/*line 6*/
+	printf("Line: %d\n",__LINE__);	/*line 7*/
+	//ubah nomor line ke 23	/*line 8*/
+	#line 23
+	//print line baru	/*line 23*/
+	printf("Line : %d\n",__LINE__);	/*line 24*/
+	printf("Terima Kasih !\n");	/*line 25*/
+}
+
+
+//Preprocessor Pragma
+#include<stdio.h>
+int display();
+
+#pragma startup display
+#pragma exit display
+
+int main() {
+   printf("\nSaya Dalam Function Main");
+   return 0;
+}
+
+int display() {
+   printf("\nSaya Dalam Function Display");
+   return 0;
+}	
