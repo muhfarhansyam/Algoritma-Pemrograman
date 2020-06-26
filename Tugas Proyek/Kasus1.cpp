@@ -24,6 +24,7 @@ int main (){
 	cout<<"===================================================================== \n";
 	// Loop input
 	for(int i = 0; i < SOA; i++){
+		cout<<"Masukkan Data Mahasiswa Ke-"<<i+1<<"\n";
 		for(int j = 0; j < 6; j++){
 			cin>> val;
 			Mahasiswa[i][j] = val;
